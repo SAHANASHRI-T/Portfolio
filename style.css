@@ -1,0 +1,319 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: url("bgimg.jpeg") repeat-y;
+}
+
+/*HEADER*/
+.head{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.headLogo{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900px;
+    color: rgb(0, 0, 0);
+}
+.headnav a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900px;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: 0.4s;
+    color: rgb(0, 0, 0);
+}
+.headnav a:hover{
+    color: #0ef;
+}
+
+/*HOME*/
+.home{
+    position:relative;
+    width: 100%;
+    /*height: 200vh;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /*background: url("bgimg.jpeg");*/
+    background-size: cover;
+    background-position: center;
+    padding-top: 185px;
+    padding-left:100px ;
+    padding-bottom: 50px;
+    animation: homeani 3s ease-in-out;
+}
+.homecon{
+    max-width: 700px;
+    animation: homeani 4s ease-in-out ;
+}
+@keyframes homeani{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(3%) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.homecon h3{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+    padding-right: 9px;
+}
+.wf{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    border-right: 2px solid;
+}
+.homecon h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.homecon p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.homeimg img{
+    max-width: 300%;
+    padding-right: 105px;
+    height: 300px;
+    width: 500px;
+    animation: floatimage 4s ease-in-out infinite;
+}
+@keyframes floatimage{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.CV{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 4rem;
+    border-color:rgb(143, 16, 111);
+    padding: 5px;
+    transition: .5s ease-in-out;
+}
+.CV:hover{
+    box-shadow: 100%;
+}
+
+/*ABOUT*/
+.about{
+    width: 100%;
+    display: flex;
+    /*flex-wrap: wrap;
+    flex-direction: row;*/
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.aboutimg img{
+    max-width: 400%;
+    padding-left: 160px;
+    height: 350px;
+    width: 550px;
+    animation: floatimage2 4s ease-in-out infinite;
+}
+@keyframes floatimage2{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-2rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.aboutcon{
+    max-width: 500%;
+    margin: 5px;
+    padding-left: 450px;
+    padding-right: 100px;
+    animation: aboutani 4s ease-in-out;
+}
+@keyframes aboutani{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(3%) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.aboutcon h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600px;
+}
+.aboutcon p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+/*SKILLS*/
+.skills{
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.skills h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600px;
+    padding: 15px;
+    padding-bottom: 18px;
+}
+.skillcon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.skillcon h4{
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 200px;
+}
+.skillcon ul{
+    list-style: none;
+}
+.frontend{
+    background-color: transparent;
+    height: 110px;
+    width: 320px;
+    border: 3px solid;
+    border-radius: 7%;
+    text-align: center;
+    animation: ani 4s ease-in-out;
+    font-weight: 800px;
+}
+.prog{
+    background-color: transparent;
+    height: 110px;
+    width: 320px;
+    border: 3px solid;
+    border-radius: 7%;
+    text-align: center;
+    animation: ani 4s ease-in-out ;
+}
+.nontech{
+    background-color: transparent;
+    height: 110px;
+    width: 320px;
+    border: 3px solid;
+    border-radius: 7%;
+    text-align: center;
+    animation: ani 4s ease-in-out;
+}
+@keyframes ani{
+    0% {
+        transform: translatex(0);
+    }
+    50% {
+        transform: translatex(-2rem);
+    }
+    100% {
+        transform: translatex(0);
+    }
+}
+
+/*CONTACT*/
+.formdivcon{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.formdiv{
+    border: 2px solid;
+    margin: 5px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+.contact h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600px;
+    padding: 15px;
+}
+.contact form{
+    max-width: 100%;
+    margin: 5px solid;
+    text-align: center;
+    padding: 10px;
+}
+.contact form .inputbox1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20%;
+}
+.contact form .inputbox2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20%;
+}
+.contact form .sub{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20%;
+    background-color: rgb(172, 255, 47);
+}
+
+/*FOOTER*/
+.footing{
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    font-style: bold;
+    font-weight: 800px;
+    display: flex;
+    justify-content: center;
+}
